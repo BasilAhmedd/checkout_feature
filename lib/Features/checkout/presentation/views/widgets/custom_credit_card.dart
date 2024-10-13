@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
 
 class CustomCreditCard extends StatefulWidget {
@@ -21,6 +22,16 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
     return Column(
       children: [
         CreditCardWidget(
+          enableFloatingCard: true,
+          floatingConfig: FloatingConfig(
+            isGlareEnabled: true,
+            isShadowEnabled: true,
+            shadowConfig: FloatingShadowConfig(
+              offset: Offset(10, 10),
+              color: Colors.black87,
+              blurRadius: 15,
+            ),
+          ),
           cardNumber: cardNumber,
           expiryDate: expiryDate,
           cardHolderName: cardHolderName,
