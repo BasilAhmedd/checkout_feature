@@ -23,7 +23,7 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
       children: [
         CreditCardWidget(
           enableFloatingCard: true,
-          floatingConfig: FloatingConfig(
+          floatingConfig: const FloatingConfig(
             isGlareEnabled: true,
             isShadowEnabled: true,
             shadowConfig: FloatingShadowConfig(
