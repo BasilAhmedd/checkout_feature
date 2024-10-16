@@ -35,7 +35,7 @@ class ThankYouViewBody extends StatelessWidget {
       //       ),
       //     )),
 
-      Positioned(
+       Positioned(
           left: 15,
           bottom: MediaQuery.of(context).size.height * 0.2,
           child: CircleAvatar(
